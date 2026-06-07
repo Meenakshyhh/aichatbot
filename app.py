@@ -23,7 +23,6 @@ with open("chunks.pkl", "rb") as f:
 vectorizer = TfidfVectorizer(stop_words="english")
 vectors = vectorizer.fit_transform(chunks)
 
-st.success("PDF Loaded Successfully ✅")
 
 # User question
 query = st.text_input("Ask a question from the PDF")
